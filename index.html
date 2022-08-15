@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Manipulator</title>
+    <link rel="stylesheet" href="/style.css" />
+<body>
+    <main>
+        <div class="container">
+            <h1>RGB Controller</h1>
+            
+            <form>
+                <div class="input-field">
+                    <label for=".input-red">RED:</label>
+                    <input type="range" oninput="updateValues(this.value, 'red')" min="0" max="255" class="input-red" />
+                    <p class="output output-red"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for=".input-red">GREEN:</label>
+                    <input type="range" oninput="updateValues(this.value, 'green')" min="0" max="255" class="input-green" />
+                    <p class="output output-green"></p>
+                </div>
+
+                <div class="input-field">
+                    <label for=".input-red">BLUE:</label>
+                    <input type="range" oninput="updateValues(this.value, 'blue')" min="0" max="255" class="input-blue" />
+                    <p class="output output-blue"></p>
+                </div>
+            </form>
+
+            <div class="output-container">
+
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

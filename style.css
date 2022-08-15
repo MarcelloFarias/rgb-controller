@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif,  Arial;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #2C3333;
+    transition: all 0.3s ease;
+}
+
+.container {
+    position: relative;
+    padding: 2rem;
+    background: #395B64;
+    color: #E7F6F2;
+    height: 70vh;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.container h1::after {
+    content: '';
+    right: 70px;
+    top: 65px;
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    background: linear-gradient(to right, #A5C9CA, #e7f6f2);
+    border-radius: 8px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.container form .input-field {
+    width: 100%;
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.container form .input-field label {
+    font-size: 1.2rem;
+}
+
+.container form .input-field .output {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #A5C9CA;
+}
+
+.container .output-container {
+    width: 95%;
+    height: 20vh;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container .output-container:hover {
+    transform: scale(1.05);
+}
+
+.container form .input-field input[type='range'] {
+    -webkit-appearance: none;
+    height: 5px;
+    margin: 10px 0;
+    background: linear-gradient(to right, #A5C9CA, #e7f6f2);
+    border-radius: 8px;
+}
+
+.container form .input-field input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: #e7f6f2;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.container form .input-field input[type='range']::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
